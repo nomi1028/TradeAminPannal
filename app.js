@@ -15,10 +15,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use("/student", studentRoute);
-app.use(express.static("./build"));
-
-app.all("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "build", "index.html"));
-});
 
 module.exports = app;
