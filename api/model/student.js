@@ -13,6 +13,8 @@ const userSchema = new mongoose.Schema({
   makerImageURL: String,
   time: String,
   NftIcon: String,
+  NftIcontrade: String,
+  ClientIcontrade: String,
   ClientIcon: String,
 });
 /////////////create  Actor model(collection)& here Actor is collection and actorschema is a schema

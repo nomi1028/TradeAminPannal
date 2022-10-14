@@ -95,6 +95,8 @@ routes.post("/", (req, res) => {
     time: req.body.time,
     NftIcon: req.body.NftIcon,
     ClientIcon: req.body.ClientIcon,
+    NftIcontrade: req.body.NftIcontrade,
+    ClientIcontrade: req.body.ClientIcontrade,
   });
   actor
     .save()
@@ -130,6 +132,8 @@ routes.patch("/:id", (req, res, next) => {
         time: req.body.time,
         NftIcon: req.body.NftIcon,
         ClientIcon: req.body.ClientIcon,
+        NftIcontrade: req.body.NftIcontrade,
+        ClientIcontrade: req.body.ClientIcontrade,
       },
     }
   )
