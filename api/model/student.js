@@ -16,6 +16,7 @@ const userSchema = new mongoose.Schema({
   NftIcontrade: String,
   ClientIcontrade: String,
   ClientIcon: String,
+  Eth: String,
 });
 /////////////create  Actor model(collection)& here Actor is collection and actorschema is a schema
 module.exports = mongoose.model("NFT", userSchema);

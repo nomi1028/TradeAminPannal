@@ -97,6 +97,7 @@ routes.post("/", (req, res) => {
     ClientIcon: req.body.ClientIcon,
     NftIcontrade: req.body.NftIcontrade,
     ClientIcontrade: req.body.ClientIcontrade,
+    Eth: req.body.Eth,
   });
   actor
     .save()
